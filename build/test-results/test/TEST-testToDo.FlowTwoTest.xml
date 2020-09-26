@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testToDo.FlowTwoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-26T21:22:38" hostname="DESKTOP-0QU3ORD" time="33.96">
+  <properties/>
+  <testcase name="TaskAddedDoubleCheckCompleted" classname="testToDo.FlowTwoTest" time="33.96"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Sep 26, 2020 5:23:01 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
