@@ -13,8 +13,8 @@ public class Android implements IDevice {
     @Override
     public AppiumDriver create() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("deviceName", "AOSP on IA Emulator");
-        capabilities.setCapability("platformVersion", "9");
+        capabilities.setCapability("deviceName", "Dieter GN3");
+        capabilities.setCapability("platformVersion", "5.0");
         capabilities.setCapability("appPackage", "com.vrproductiveapps.whendo");
         capabilities.setCapability("appActivity", "com.vrproductiveapps.whendo.ui.HomeActivity");
         capabilities.setCapability("platformName", "Android");
