@@ -29,7 +29,7 @@ public class FlowOneTest {
         flowOneCreation.inputNotes.Write("Flow One automation.");
         flowOneCreation.simpleCheckButton.Click();
         String actualResult = flowOne.labelTitleOneTaskOnly.GetText();
-        Assert.assertEquals("no match", expectedResult, actualResult);
+        Assert.assertEquals("no task in the list", expectedResult, actualResult);
     }
 
     @After
