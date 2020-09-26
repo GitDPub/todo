@@ -12,15 +12,19 @@ public class CheckBox extends Control {
 
     public void Check() throws MalformedURLException {
         this.FindControl();
-        if(this.control.getAttribute("checked").equals("false")) {
+        if(!IsChecked()) {
             this.control.click();
         }
     }
 
     public void Uncheck() throws MalformedURLException {
         this.FindControl();
-        if(this.control.getAttribute("checked").equals("true")) {
+        if(IsChecked()) {
             this.control.click();
         }
+    }
+
+    public boolean IsChecked() throws MalformedURLException {
+        return this.control.getAttribute("checked").equals("true");
     }
 }
