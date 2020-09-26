@@ -9,7 +9,7 @@ public class TextBox extends  Control{
         super(locator);
     }
 
-    public void Type(String value) throws MalformedURLException {
+    public void Write(String value) throws MalformedURLException {
         this.FindControl();
         this.control.sendKeys(value);
     }
