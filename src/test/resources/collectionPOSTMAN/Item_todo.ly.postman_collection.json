@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "38f6928b-bbaa-4f48-9ded-fc81cdba6af3",
+		"name": "Item todo.ly",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123todo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "dportanda@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Content\": \"New Item 1\"\r\n}"
+				},
+				"url": {
+					"raw": "https://todo.ly/api/items.json",
+					"protocol": "https",
+					"host": [
+						"todo",
+						"ly"
+					],
+					"path": [
+						"api",
+						"items.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123todo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "dportanda@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Content\": \"New Item #1\"\r\n}"
+				},
+				"url": {
+					"raw": "https://todo.ly/api/items/10753838.json",
+					"protocol": "https",
+					"host": [
+						"todo",
+						"ly"
+					],
+					"path": [
+						"api",
+						"items",
+						"10753838.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123todo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "dportanda@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://todo.ly/api/items.json",
+					"protocol": "https",
+					"host": [
+						"todo",
+						"ly"
+					],
+					"path": [
+						"api",
+						"items.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET by id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123todo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "dportanda@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://todo.ly/api/items/10753838.json",
+					"protocol": "https",
+					"host": [
+						"todo",
+						"ly"
+					],
+					"path": [
+						"api",
+						"items",
+						"10753838.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123todo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "dportanda@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todo.ly/api/items/10753838.json",
+					"protocol": "https",
+					"host": [
+						"todo",
+						"ly"
+					],
+					"path": [
+						"api",
+						"items",
+						"10753838.json"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
